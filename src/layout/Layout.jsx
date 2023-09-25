@@ -3,7 +3,9 @@ import NavBar from "../components/Header/NavBar/NavBar";
 
 const Layout = () => {
   return (
-    <div className="md:max-w-xl lg:max-w-3xl xl:max-w-6xl 2xl:max-w-[82rem] mx-8 md:mx-auto">
+    <div
+      className={`md:max-w-xl lg:max-w-3xl xl:max-w-6xl 2xl:max-w-[82rem] mx-8 md:mx-auto`}
+    >
       <NavBar></NavBar>
       <Outlet></Outlet>
     </div>

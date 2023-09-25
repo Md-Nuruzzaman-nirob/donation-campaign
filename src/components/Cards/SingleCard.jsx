@@ -7,7 +7,7 @@ const SingleCard = ({ card }) => {
     card || {};
 
   return (
-    <Link to={`/cards/${id}`}>
+    <Link to={`/cards/${id}`} className="mx-8">
       <div
         style={{
           background: Card_bg,
@@ -22,7 +22,7 @@ const SingleCard = ({ card }) => {
               background: Category_bg,
               color: Text_button_bg,
             }}
-            className="font-medium px-3 py-1 inline-block rounded-md"
+            className="text-sm md:text-base font-medium px-3 py-1 inline-block rounded-md"
           >
             {Category}
           </h4>
@@ -31,7 +31,7 @@ const SingleCard = ({ card }) => {
             style={{
               color: Text_button_bg,
             }}
-            className="pb-4 pt-2 text-xl font-semibold"
+            className="pb-4 pt-2 md:text-xl font-semibold"
           >
             {Title}
           </h3>

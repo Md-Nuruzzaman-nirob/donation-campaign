@@ -22,15 +22,19 @@ const DonationPageCard = ({ card }) => {
       className="flex items-center rounded-lg"
     >
       <div>
-        <img src={Another_Picture} alt="" />
+        <img
+          className="w-40 md:w-full lg:w-48 xl:w-full"
+          src={Another_Picture}
+          alt=""
+        />
       </div>
-      <div className="ml-4 mt-4">
+      <div className="ml-4 md:mt-4 lg:mt-0 xl:mt-4">
         <h4
           style={{
             background: Category_bg,
             color: Text_button_bg,
           }}
-          className="font-medium px-3 py-1 inline-block rounded-md"
+          className="font-medium text-xs md:text-base lg:text-xs xl:text-base px-2 md:px-3 py-1 inline-block rounded-md"
         >
           {Category}
         </h4>
@@ -39,25 +43,27 @@ const DonationPageCard = ({ card }) => {
           style={{
             color: Text_button_bg,
           }}
-          className="pb-2 pt-2 text-xl font-semibold"
+          className="pb-2 pt-2 text-sm md:text-xl lg:text-xs xl:text-xl font-semibold"
         >
           {Title}
         </h3>
+
         <h4
           style={{
             color: Text_button_bg,
           }}
-          className="mb-5 font-semibold"
+          className="text-sm md:text-base mb-2 md:mb-5 lg:mb-3 xl:5 font-semibold"
         >
           ${Price}
         </h4>
+
         <Link to={`/cards/${id}`}>
           <button
             style={{
               background: Category_bg,
               color: Text_button_bg,
             }}
-            className="px-3 py-[6px] md:px-4 md:py-2 rounded-md text-xs md:text-base font-semibold mb-6"
+            className="px-3 py-1 md:px-4 md:py-2 rounded-md text-xs md:text-base lg:text-xs xl:text-base font-semibold md:mb-6 lg:mb-0 xl:mb-6"
           >
             View Details
           </button>
