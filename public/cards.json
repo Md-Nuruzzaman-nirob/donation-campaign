@@ -1,0 +1,135 @@
+[
+    {
+      "id": "1",
+      "Picture": "https://i.ibb.co/X2BY1DW/Education.png",
+      "Title": "Donate for Education",
+      "Category": "Education",
+      "Category_bg": "#93c5fd",
+      "Card_bg": "#dbeafe",
+      "Text_button_bg": "#1d4ed8",
+      "Description": "Help provide educational opportunities to underprivileged children. Your donation can make a difference in their lives.",
+      "Price": 140.00
+    },
+    {
+      "id": "2",
+      "Picture": "https://i.ibb.co/hV60rbR/Health.png",
+      "Title": "Support Healthcare",
+      "Category": "Health",
+      "Category_bg": "#fda4af",
+      "Card_bg": "#ffe4e6",
+      "Text_button_bg": "#be123c",
+      "Description": "Contribute to improving healthcare access and services for those in need. Your donation can save lives.",
+      "Price": 100.00
+    },
+    {
+      "id": "3",
+      "Picture": "https://i.ibb.co/rtj9QFD/Food.png",
+      "Title": "Feed the Hungry",
+      "Category": "Food",
+      "Category_bg": "#fdba74",
+      "Card_bg": "#ffedd5",
+      "Text_button_bg": "#ea580c",
+      "Description": "Help combat hunger by providing nutritious meals to those who are struggling to put food on their tables.",
+      "Price": 90.00
+    },
+    {
+      "id": "4",
+      "Picture": "https://i.ibb.co/ZmXXbJB/Clothing.png",
+      "Title": "Clothing Drive",
+      "Category": "Clothing",
+      "Category_bg": "#6ee7b7",
+      "Card_bg": "#d1fae5",
+      "Text_button_bg": "#047857",
+      "Description": "Support the clothing drive and donate clothing items to keep individuals warm and protected during the cold months.",
+      "Price": 150.00
+    },
+    {
+      "id": "5",
+      "Picture": "https://i.ibb.co/X2BY1DW/Education.png",
+      "Title": "Educational Scholarships",
+      "Category": "Education",
+      "Category_bg": "#93c5fd",
+      "Card_bg": "#dbeafe",
+      "Text_button_bg": "#1d4ed8",
+      "Description": "Contribute to scholarship programs and empower aspiring students to pursue their dreams through education.",
+      "Price": 120.00
+    },
+    {
+      "id": "6",
+      "Picture": "https://i.ibb.co/hV60rbR/Health.png",
+      "Title": "Healthcare for All",
+      "Category": "Health",
+      "Category_bg": "#fda4af",
+      "Card_bg": "#ffe4e6",
+      "Text_button_bg": "#be123c",
+      "Description": "Ensure healthcare access for everyone by supporting free medical clinics and health outreach programs.",
+      "Price": 50.00
+    },
+    {
+      "id": "7",
+      "Picture": "https://i.ibb.co/rtj9QFD/Food.png",
+      "Title": "Food for Families",
+      "Category": "Food",
+      "Category_bg": "#fdba74",
+      "Card_bg": "#ffedd5",
+      "Text_button_bg": "#ea580c",
+      "Description": "Provide food assistance to struggling families, helping them put nutritious meals on their tables.",
+      "Price": 70.00
+    },
+    {
+      "id": "8",
+        "Picture": "https://i.ibb.co/ZmXXbJB/Clothing.png",
+        "Title": "Warm Blanket Drive",
+        "Category": "Clothing",
+        "Category_bg": "#6ee7b7",
+        "Card_bg": "#d1fae5",
+        "Text_button_bg": "#047857",
+        "Description": "Support the Warm Blanket Drive by donating blankets to help individuals stay warm during the cold winter months.",
+        "Price": 55.00
+    },
+    {
+      "id": 9,
+        "Picture": "https://i.ibb.co/X2BY1DW/Education.png",
+        "Title": "Scholarship Fund",
+        "Category": "Education",
+        "Category_bg": "#93c5fd",
+        "Card_bg": "#dbeafe",
+        "Text_button_bg": "#1d4ed8",
+        "Description": "Contribute to a scholarship fund that enables students from disadvantaged backgrounds to pursue higher education.",
+        "Price": 100.00
+    },
+    {
+      "id": "10",
+      "Picture": "https://i.ibb.co/hV60rbR/Health.png",
+      "Title": "Medical Supplies Aid",
+      "Category": "Health",
+      "Category_bg": "#fda4af",
+      "Card_bg": "#ffe4e6",
+      "Text_button_bg": "#be123c",
+      "Description": "Donate essential medical supplies to healthcare facilities in need, contributing to better patient care.",
+      "Price": 80.00
+    },
+    {
+      "id": "11",
+      "Picture": "https://i.ibb.co/rtj9QFD/Food.png",
+      "Title": "Emergency Food Relief",
+      "Category": "Food",
+      "Category_bg": "#fdba74",
+      "Card_bg": "#ffedd5",
+      "Text_button_bg": "#ea580c",
+      "Description": "Support emergency food relief efforts to provide immediate assistance to those facing hunger crises.",
+      "Price": 60.00
+    },
+    {
+      "id": "12",
+      "Picture": "https://i.ibb.co/ZmXXbJB/Clothing.png",
+      "Title": "Warm Clothing Drive",
+      "Category": "Clothing",
+      "Category_bg": "#6ee7b7",
+      "Card_bg": "#d1fae5",
+      "Text_button_bg": "#047857",
+      "Description": "Help collect warm clothing items for homeless individuals to keep them safe and comfortable during winter.",
+      "Price": 130.00
+    }
+  ]
+  
