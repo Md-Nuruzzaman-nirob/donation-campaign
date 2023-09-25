@@ -22,7 +22,7 @@ const SingleCard = ({ card }) => {
               background: Category_bg,
               color: Text_button_bg,
             }}
-            className="font-medium px-3 py-1 inline-block rounded-lg"
+            className="font-medium px-3 py-1 inline-block rounded-md"
           >
             {Category}
           </h4>
@@ -44,4 +44,5 @@ const SingleCard = ({ card }) => {
 SingleCard.propTypes = {
   card: PropTypes.object.isRequired,
 };
+
 export default SingleCard;
