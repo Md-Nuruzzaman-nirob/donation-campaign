@@ -7,7 +7,7 @@ const SingleCard = ({ card }) => {
     card || {};
 
   return (
-    <Link to={`/cards/${id}`} className="mx-8">
+    <Link to={`/cards/${id}`} className="mx-8 md:mx-0">
       <div
         style={{
           background: Card_bg,

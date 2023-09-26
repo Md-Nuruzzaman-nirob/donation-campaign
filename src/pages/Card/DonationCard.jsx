@@ -50,10 +50,10 @@ const DonationCard = ({ card }) => {
           <button
             onClick={handleClickAddLocalStorage}
             style={{
-              background: Category_bg,
-              color: Text_button_bg,
+              background: Text_button_bg,
+              color: "white",
             }}
-            className="px-3 py-[6px] md:px-4 md:py-2 lg:py-3 xl:px-6 xl:py-4 rounded-lg text-xs md:text-base lg:text-xl  font-bold md:font-semibold ml-4 md:ml-5 lg:ml-9"
+            className="px-3 py-[6px] md:px-4 md:py-2 lg:py-3 xl:px-6 xl:py-4 rounded-md text-xs md:text-base lg:text-xl  font-bold md:font-semibold ml-4 md:ml-5 lg:ml-9"
           >
             Donate ${Price}
           </button>
@@ -65,7 +65,9 @@ const DonationCard = ({ card }) => {
           {Title}
         </h3>
 
-        <p className="text-sm text-[#0B0B0BB2] opacity-90">{Description}</p>
+        <p className="text-sm lg:text-lg text-[#0B0B0BB2] opacity-90">
+          {Description}
+        </p>
       </div>
     </div>
   );

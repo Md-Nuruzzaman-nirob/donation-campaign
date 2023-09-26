@@ -4,7 +4,7 @@ import DonationPageCard from "./DonationPageCard";
 const Donation = () => {
   const [donationCard, setDonationCard] = useState([]);
   const [haveDonation, setHaveDonation] = useState(false);
-  const [toggle, setToggle] = useState(false);
+  const [seeAllButton, setSeeAllButton] = useState(false);
 
   useEffect(() => {
     const getStorage = JSON.parse(localStorage.getItem("donation"));
@@ -16,8 +16,12 @@ const Donation = () => {
     }
   }, []);
 
+  const handleSeeAllClick = () => {
+    setSeeAllButton(true);
+  };
+
   return (
-    <div className="mb-36">
+    <div className="mb-20 md:mb-36">
       {haveDonation ? (
         <h4 className="h-[65vh] flex items-center justify-center text-2xl">
           {haveDonation}
@@ -25,30 +29,26 @@ const Donation = () => {
       ) : (
         <div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-            {toggle
+            {seeAllButton
               ? donationCard.map((card) => (
-                  <DonationPageCard
-                    key={card.id}
-                    card={card}
-                  ></DonationPageCard>
+                  <DonationPageCard key={card.id} card={card} />
                 ))
               : donationCard
                   .slice(0, 4)
                   .map((card) => (
-                    <DonationPageCard
-                      key={card.id}
-                      card={card}
-                    ></DonationPageCard>
+                    <DonationPageCard key={card.id} card={card} />
                   ))}
           </div>
-          <div className="text-center mt-10">
-            <button
-              onClick={() => setToggle(!toggle)}
-              className="px-3 py-[6px] md:px-5 md:py-2 rounded-md text-xs md:text-lg font-medium text-white bg-green-600 mb-6 "
-            >
-              {toggle ? "See Less" : "See All"}
-            </button>
-          </div>
+          {donationCard.length > 4 && (
+            <div className={`text-center mt-10 ${seeAllButton && "hidden"}`}>
+              <button
+                onClick={handleSeeAllClick}
+                className={`px-3 py-[6px] md:px-5 md:py-2 rounded-md text-xs md:text-lg font-medium text-white bg-green-600 mb-6`}
+              >
+                See All
+              </button>
+            </div>
+          )}
         </div>
       )}
     </div>

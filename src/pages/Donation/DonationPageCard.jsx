@@ -39,12 +39,7 @@ const DonationPageCard = ({ card }) => {
           {Category}
         </h4>
 
-        <h3
-          style={{
-            color: Text_button_bg,
-          }}
-          className="pb-2 pt-2 text-sm md:text-xl lg:text-xs xl:text-xl font-semibold"
-        >
+        <h3 className="pb-2 pt-2 text-sm md:text-xl lg:text-base xl:text-xl font-semibold">
           {Title}
         </h3>
 
@@ -60,8 +55,8 @@ const DonationPageCard = ({ card }) => {
         <Link to={`/cards/${id}`}>
           <button
             style={{
-              background: Category_bg,
-              color: Text_button_bg,
+              background: Text_button_bg,
+              color: "white",
             }}
             className="px-3 py-1 md:px-4 md:py-2 rounded-md text-xs md:text-base lg:text-xs xl:text-base font-semibold md:mb-6 lg:mb-0 xl:mb-6"
           >
