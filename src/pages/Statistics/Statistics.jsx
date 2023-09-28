@@ -1,19 +1,27 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
 import { PieChart, pieArcLabelClasses } from "@mui/x-charts/PieChart";
 
 const Statistics = () => {
   const [donationCard, setDonationCard] = useState([]);
+  const [cardsData, setCardsData] = useState([]);
 
-  const cardsData = useLoaderData();
+  useEffect(() => {
+    fetch("/data.json")
+      .then((res) => res.json())
+      .then((data) => setCardsData(data));
+  }, []);
 
   useEffect(() => {
     const getStorage = JSON.parse(localStorage.getItem("donation"));
 
     if (getStorage) {
       setDonationCard(getStorage);
+    } else {
+      setDonationCard([]);
     }
   }, []);
+
+  console.log(donationCard);
 
   const getStorageTotal = donationCard
     .map((item) => item.Price)
