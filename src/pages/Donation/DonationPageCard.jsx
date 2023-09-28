@@ -58,7 +58,7 @@ const DonationPageCard = ({ card }) => {
               background: Text_button_bg,
               color: "white",
             }}
-            className="px-3 py-1 md:px-4 md:py-2 rounded-md text-xs md:text-base lg:text-xs xl:text-base font-semibold md:mb-6 lg:mb-0 xl:mb-6"
+            className=" px-3 py-1 md:px-4 md:py-2 rounded-md text-xs md:text-base lg:text-xs xl:text-base font-semibold md:mb-6 lg:mb-0 xl:mb-6"
           >
             View Details
           </button>

@@ -43,7 +43,7 @@ const Donation = () => {
             <div className={`text-center mt-10 ${seeAllButton && "hidden"}`}>
               <button
                 onClick={handleSeeAllClick}
-                className={`px-3 py-[6px] md:px-5 md:py-2 rounded-md text-xs md:text-lg font-medium text-white bg-green-600 mb-6`}
+                className={`btn px-3 py-[6px] md:px-5 md:py-2 rounded-md text-xs md:text-lg font-medium text-white bg-[#FF444A] hover:bg-[#FF444A]  mb-6`}
               >
                 See All
               </button>

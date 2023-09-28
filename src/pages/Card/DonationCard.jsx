@@ -1,18 +1,9 @@
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 import swal from "sweetalert";
 
 const DonationCard = ({ card }) => {
   // destructuring
-  const {
-    id,
-    Title,
-    Price,
-    Description,
-    Picture,
-    Category_bg,
-    Text_button_bg,
-  } = card || {};
+  const { Title, Price, Description, Picture, Text_button_bg } = card || {};
 
   const handleClickAddLocalStorage = () => {
     let addToLocalStorage = [];
@@ -45,19 +36,17 @@ const DonationCard = ({ card }) => {
         <div className="h-14 md:h-20 lg:h-28 xl:h-32 w-full bg-[#0B0B0B80] opacity-50 rounded-b-xl"></div>
       </div>
 
-      <div className="absolute top-[150px] md:top-[260px] lg:top-[370px] xl:top-[605px]">
-        <Link to={"/donation"} state={id}>
-          <button
-            onClick={handleClickAddLocalStorage}
-            style={{
-              background: Text_button_bg,
-              color: "white",
-            }}
-            className="px-3 py-[6px] md:px-4 md:py-2 lg:py-3 xl:px-6 xl:py-4 rounded-md text-xs md:text-base lg:text-xl  font-bold md:font-semibold ml-4 md:ml-5 lg:ml-9"
-          >
-            Donate ${Price}
-          </button>
-        </Link>
+      <div className="absolute top-[150px] md:top-[260px] lg:top-[370px] xl:top-[610px]">
+        <button
+          onClick={handleClickAddLocalStorage}
+          style={{
+            background: Text_button_bg,
+            color: "white",
+          }}
+          className="px-3 py-[6px] md:px-4 md:py-2 lg:py-3 xl:px-6 rounded-md text-xs md:text-base lg:text-xl  font-bold md:font-semibold ml-4 md:ml-5 lg:ml-9"
+        >
+          Donate ${Price}
+        </button>
       </div>
 
       <div className="mt-10 md:mt-14 mb-32">

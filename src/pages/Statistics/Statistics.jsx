@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-
 import { PieChart, pieArcLabelClasses } from "@mui/x-charts/PieChart";
 
 const Statistics = () => {
   const [donationCard, setDonationCard] = useState([]);
+
+  const cardsData = useLoaderData();
 
   useEffect(() => {
     const getStorage = JSON.parse(localStorage.getItem("donation"));
@@ -14,22 +15,21 @@ const Statistics = () => {
     }
   }, []);
 
-  const cardsData = useLoaderData();
-
   const getStorageTotal = donationCard
     .map((item) => item.Price)
     .reduce((a, b) => a + b, 0);
 
-  console.log(getStorageTotal);
   const cardsTotal = cardsData
     .map((item) => item.Price)
     .reduce((a, b) => a + b, 0);
 
-  console.log(cardsTotal);
-
   const data = [
     { label: "Your Donation", value: getStorageTotal, color: "#00C49F" },
-    { label: "Total Donation", value: cardsTotal, color: "#FF444A" },
+    {
+      label: "Total Donation",
+      value: cardsTotal - getStorageTotal,
+      color: "#FF444A",
+    },
   ];
 
   const sizing = {
@@ -44,7 +44,6 @@ const Statistics = () => {
     const percent = params.value / TOTAL;
     return `${(percent * 100).toFixed(0)}%`;
   };
-
   return (
     <div className="flex flex-col justify-center items-center">
       <PieChart

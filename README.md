@@ -1,8 +1,21 @@
-# React + Vite
+# Mi-8 Donation Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mi-8 Donation Website is a responsive website designed to facilitate charitable donations to various causes. This project includes the following features:
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Search Functionality
+
+- Users can easily search for donations by category or title, making it convenient to find causes they are passionate about.
+
+### Dynamic Donation Details Page
+
+- The donation details page dynamically displays comprehensive information about a specific donation. This includes essential details such as a picture, title, description, and price.
+
+### Donate Button
+
+- Users can contribute to any donation they choose by simply clicking the "Donate" button on the donation details page.
+
+### This is three features about the project.
+
+### thank you.
